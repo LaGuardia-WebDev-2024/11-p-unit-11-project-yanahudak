@@ -1,12 +1,12 @@
 <!-- Unit 11 Project
 Requirements
 [  ] $() Select by Element, ID AND Class 
-[  ] Use Three Different jQuery Methods 
-[  ] Add Five CSS Declarations
-[  ] Include Three Images
+[ x ] Use Three Different jQuery Methods 
+[ x ] Add Five CSS Declarations
+[ x ] Include Three Images
 
 Select ONE Additional 
-[ no ] Feature 1 - Use .hide() & .show() method
+[ yes ] Feature 1 - Use .hide() & .show() method
 [ no ] Feature 2 - Use .addClass() method
 [ no ] Feature 3 - Use .slideDown() method
 [ no ] Feature 4 - Use .mouseover() method
@@ -21,44 +21,67 @@ Select ONE Additional
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <button id="mem1-button">Memory #1</button>
-    <button id="mem2-button">Memory #2</button>
-    <button id="mem3-button">Memory #3</button>
-    <h1>My Top 3 Memories of <span>This Year</span></h1>
+    <button id="tre1-button">Treat #1</button>
+    <button id="tre2-button">Treat #2</button>
+    <button id="tre3-button">Treat #3</button>
+    <h1>My Cat's Top 3 <span>Treats</span></h1>
     <ol>
-      <li>
-        <h3 id="mem1">Memory #1</h3>
-        <p>More about this memory.</p>
-      </li>
+
+    <img src="https://mail.google.com/mail/u/0?ui=2&ik=5d5b55901c&attid=0.1&permmsgid=msg-a:r-3745119263630862349&th=19d8cc3b5cecdc61&view=fimg&fur=ip&permmsgid=msg-a:r-3745119263630862349&sz=s0-l75-ft&attbid=ANGjdJ977NigyQ-HtlUucU7WxNiFIeU5Z-bOapxeGDpxX5iyB6FMwMMQ2XwkeYdGrE9sfR2GJ7kGdlzavM8U_kzdkGw1W2pIBIxUaCJi67WhkSPm9yP2n6RqEKQuPoo&disp=emb&realattid=ii_mnytkjpr0&zw" width="300" height="200">
 
       <li>
-        <h3 id="mem2">Memory #2</h3>
-        <p>More about this memory.</p>
+        <h3 id="tre1">Treat #1</h3>
+        <p>She goes absolutely insane for these lickable purée treats. She would trade her entire family for a 50 pack of Churu in a heartbeat.</p>
       </li>
 
+      <img class="treat1" src="https://i0.wp.com/ganadofeed.com/wp-content/uploads/2024/04/Untitled57_20230912120536.png" width="300" height="200">
+   
       <li>
-        <h3 id="mem3">Memory #3</h3>
-        <p>More about this memory</p>
+        <h3 id="tre2">Treat #2</h3>
+        <p>These are the perfect treat for her stinky breath after eating, it's nice and refreshing and she drools at the sight of these treats. </p>
       </li>
+
+      <img class="treat2" src="https://www.greenies.com/cdn/shop/files/00642863111372_C1R1.jpg?v=1750439214&width=1445" width="300" height="200">
+
+      <li>
+        <h3 id="tre3">Treat #3</h3>
+        <p>It's at the bottom because she will eat them when it's given to her but <strong>nothing</strong> will make her go crazy like Churu.</p>
+      </li>
+
+      <img class="treat3" src="https://target.scene7.com/is/image/Target/GUEST_5d66c954-d1ea-4bc2-8d90-0b7de5297653" width="300" height="200">
+
     </ol>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
 
+      $(".treat1").hide();
+
+      $(".treat2").hide();
+
+      $(".treat3").hide();
+
+      $().hide();
+
       // ======================== Button #1
-      $("#mem1-button").click(function () {
-        $("#mem1").css("color", "purple");
+      $("#tre1-button").click(function () {
+        $("#tre1").css("color", "red");
+        $("#tre1").text("Churu");
+        $(".treat1").show(2000);
       });
 
       // ======================== Button #2
-      $("#mem2-button").click(function () {
-        $("#mem2").css("color", "blue");
+      $("#tre2-button").click(function () {
+        $("#tre2").css("color", "green");
+        $("#tre2").text("Greenies");
+        $(".treat2").show(2000);
       });
 
       // ======================== Button #3
-      $("#mem3-button").click(function () {
-        $("#mem3").css("color", "green");
-        $("#mem3").text("Coding Parties! 🎉");
+      $("#tre3-button").click(function () {
+        $("#tre3").css("color", "yellow");
+        $("#tre3").text("Temptations");
+        $(".treat3").show(2000);
       });
 
 

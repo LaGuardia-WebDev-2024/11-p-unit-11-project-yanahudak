@@ -2,11 +2,22 @@
 
 /* ======================== CSS Rule #1 */
 html {
-  background-color: white;
+  background-color: rgb(255, 212, 241);
   padding-left: 20px;
 }
 
 /* ======================== CSS Rule #2 */
 h1 {
   font-family: "Poetsen One", sans-serif;
+  color: blueviolet;
 }
+
+h3 {
+  color: blueviolet;
+}
+
+p {
+  color: rgb(132, 91, 164);
+}
+
+
