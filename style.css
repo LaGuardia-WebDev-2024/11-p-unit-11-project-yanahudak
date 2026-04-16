@@ -14,10 +14,12 @@ h1 {
 
 h3 {
   color: blueviolet;
+  font-family: "Poetsen One", sans-serif;
 }
 
 p {
   color: rgb(132, 91, 164);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
